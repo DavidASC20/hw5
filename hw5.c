@@ -29,6 +29,19 @@ int main(){
 
     printf("ui hex is %x and ui dec is %u\n", ui, ui);
 
-    int count;
+    int b;
 
+    for(b = 0; b < 4; b++){
+        printf("hex: %hhx and dec: %hhu\n", *(char_point_ui + b), *(char_point_ui + b));
+    }
+
+    for(b = 0; b < 4; b++){
+        (*(char_point_ui+b))++;
+        printf("hex: %p and dec: %lu\n", &ui, &ui);
+    }
+
+     for(b = 0; b < 4; b++){
+        (*(char_point_ui+b))+= 16;
+        printf("hex: %p and dec: %lu\n", &ui, &ui);
+    }
 }
