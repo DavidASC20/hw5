@@ -17,4 +17,18 @@ int main(){
 
     printf("char pointer: %p\nint pointer: %p\nlong pointer: %p\n", pointer_c, pointer_i, pointer_l);
 
+    *pointer_c = 'r';
+    *pointer_i = 20;
+    *pointer_l = 246913569;
+
+    printf("char pointer: %c\nint pointer: %d\nlong pointer: %ld\n", c, i, l);
+
+    unsigned int ui = 2045;
+    int *int_point_ui = &ui;
+    char *char_point_ui = &ui;
+
+    printf("ui hex is %x and ui dec is %u\n", ui, ui);
+
+    int count;
+
 }
